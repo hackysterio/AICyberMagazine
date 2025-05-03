@@ -1,0 +1,16 @@
+recon_task:
+  description: >
+    Conduct open-source intelligence (OSINT) to gather contextual information about {org_name}.
+    Focus on identifying common communication styles, recent company news, staff roles, and typical tools used.
+    Your final answer MUST be a structured summary highlighting key points that can be used to craft phishing emails.
+  expected_output: >
+    A structured summary including 5 key facts about the target company, common communication patterns, 
+    and potential phishing lures relevant to their context.
+
+phishing_email_generation_task:
+  description: >
+    Based on the gathered company context, craft 3 unique simulated phishing emails.
+    Each email should have a subject line, body content, and a call-to-action link placeholder.
+    Your final answer MUST include the 3 emails formatted as structured markdown with sections: Subject, Body, CTA Link.
+  expected_output: >
+    3 realistic phishing emails in markdown format with subject, body, and CTA placeholders ready for simulation.
